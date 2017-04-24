@@ -1,0 +1,147 @@
+/* === GLOBAL STYLES === */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  color: #767676;
+  background: #EFEFEF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  width: 46%;
+  min-width: 230px;
+  border: .2rem solid #2f4f4f;
+  border-radius: .25rem;
+  margin: .9rem auto;
+  padding: 1rem .5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+  background: #DDD;
+}
+
+
+/* === START SCREEN STYLES === */
+
+section#start-screen-buttons {
+  width: 100%;
+  align-items: center;
+}
+
+section#start-screen-buttons button {
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+}
+
+section#start-screen-container h2 {
+  background: #A9A9A9;
+  padding: .75rem 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+}
+
+
+/* === SCORE VARIABLES STYLES === */
+
+section#score {
+  background: #A9A9A9;
+  padding-right: .75rem;
+  text-align: right;
+  font-size: 1.75rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+}
+
+
+/* === QUIZ PAGES STYLES === */
+
+.Abstract {
+  background: #CAEBF2;
+}
+
+.correct-boost {
+  transform: scale(1.07);
+  transition: all 1s ease;
+  border-color: #01FF70;
+  box-shadow: 0 0 1rem #01FF70;
+}
+
+.Dev {
+  background: #FF3B3F;
+}
+
+.hidden {
+  display: none;
+}
+
+.right {
+  background: #50d07d;
+}
+
+.wrong {
+  background: #d02552;
+}
+
+section#button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+section#button-container h2 {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+}
+
+
+/* === SCORE SCREEN STYLES === */
+
+p#message {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+section#score-screen h3 {
+  background: #A9A9A9;
+  font-size: 1.75rem;
+  padding: .75rem 0;
+  margin-bottom: -.25rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #767676;
+}
+
+
+/* === SMALLER SCREENS MEDIA QUERY === */
+
+@media (max-width: 600px) {
+  section#button-container {
+    flex-direction: column;
+  }
+}
