@@ -41,6 +41,10 @@ button {
   background: #DDD;
 }
 
+.hidden {
+  display: none;
+}
+
 
 /* === START SCREEN STYLES === */
 
@@ -90,10 +94,6 @@ section#score {
 
 .Dev {
   background: #FF3B3F;
-}
-
-.hidden {
-  display: none;
 }
 
 .right {
